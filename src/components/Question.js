@@ -1,4 +1,6 @@
 import React, { Component } from 'react'; 
+// import * as CountryAPI from '../../CountryAPI'
+
 
 class Question extends Component {
 
