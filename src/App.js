@@ -23,8 +23,10 @@ class App extends Component {
       .then(response =>{
         this.setState({ capital: response["capital"]}) 
         this.setState({ country: response["name"]})
+        console.log(this.state.capital)
       })
   }
+
 
   render() {
     return (

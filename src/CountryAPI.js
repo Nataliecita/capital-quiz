@@ -13,8 +13,12 @@ export const getRandomCountry = (randomNum) =>
   fetch(`${api}/all`, {mode: "cors"})
     .then(res => res.json())
     .then(function(data){
-      // countries = data
-      // console.log(countries)
-      console.log(data[randomNum])
       return data[randomNum]
     })
+
+export const getCountries = () =>
+  fetch(`${api}/all`, {mode: "cors"})
+    .then(res => res.json())
+    .then(function(data){
+      return data
+})
