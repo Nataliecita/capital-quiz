@@ -39,3 +39,21 @@ body{
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Chars */
+
+.char-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.char-grid li {
+  padding: 10px 5px;
+  text-align: left;
+}

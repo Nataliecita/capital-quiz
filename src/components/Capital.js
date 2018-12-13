@@ -1,13 +1,18 @@
 import React, { Component} from 'react';
 import PropTypes from 'prop-types';
 
+import Char from './Char';
+
 
 class Capital extends Component {
   render(){
     return (
-      <div>
-        <p>{this.props.capital}</p>
-      </div>
+      <ul className="char-grid">
+      {
+        this.props.capital && this.props.capital.map((char, key) => <Char char={char} key={key} />)
+      }
+    </ul> 
+
     )
   }
 }
