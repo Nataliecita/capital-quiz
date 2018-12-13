@@ -2,7 +2,7 @@ import React from 'react';
 
 function Char(props){
   return(
-    <li>{props.char}</li>
+    <li className="char">{props.char}</li>
   )
 }
 
