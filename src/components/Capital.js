@@ -1,4 +1,6 @@
 import React, { Component} from 'react';
+import PropTypes from 'prop-types';
+
 
 class Capital extends Component {
   render(){
@@ -9,5 +11,10 @@ class Capital extends Component {
     )
   }
 }
+
+// proptype for validation it's an array
+Capital.propTypes = {
+  capital: PropTypes.array
+};
 
 export default Capital
